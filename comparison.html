@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LeafletJS ja OpenLayers võrdlus KML kaartide kasutamisel">
+    <title>LeafletJS vs OpenLayers | KML Maps</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">KML Maps</div>
+
+    <a href="index.html">Avaleht</a>
+    <a href="leaflet.html">LeafletJS</a>
+    <a href="openlayers.html">OpenLayers</a>
+    <a href="comparison.html" aria-current="page">Võrdlus</a>
+</nav>
+
+<main class="container">
+    <section class="card">
+
+        <h1>LeafletJS ja OpenLayers võrdlus</h1>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th scope="col">Omadus</th>
+                    <th scope="col">LeafletJS</th>
+                    <th scope="col">OpenLayers</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <th scope="row">KML kasutamine</th>
+                    <td>
+                        KML laaditakse Leaflet-Omnivore abil ja
+                        lisatakse kaardile kihina.
+                    </td>
+                    <td>
+                        KML laaditakse OpenLayersi KML-formaadiga
+                        VectorSource'i.
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Lisafunktsioonid</th>
+                    <td>
+                        Kogu KML-i ulatuse näitamine ja kasutaja
+                        asukoha määramine.
+                    </td>
+                    <td>
+                        Kogu KML-i ulatuse näitamine, KML-kihi
+                        sisse- ja väljalülitamine ning objekti
+                        klõpsamisel nime kuvamine.
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Praktiline kasutamine</th>
+                    <td>
+                        Sobib hästi lihtsamate interaktiivsete kaartide
+                        tegemiseks ja on suhteliselt lihtsa ülesehitusega.
+                    </td>
+                    <td>
+                        Sobib hästi keerukamate GIS-funktsioonide,
+                        erinevate andmeformaatide ja kihtidega töötamiseks.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Kokkuvõte</h2>
+
+        <p>
+            Praktilises töös kasutati mõlemas lahenduses sama KML-faili.
+            LeafletJS-i lahendus on kompaktne ja lihtsasti arusaadav.
+            OpenLayers pakub rohkem GIS-i suunitlusega võimalusi ning selle
+            abil saab töötada erinevate ruumiandmete formaatide ja
+            keerukamate kihtidega.
+        </p>
+
+        <h2>Projektis kasutatud failid</h2>
+
+        <pre><code>index.html
+leaflet.html
+openlayers.html
+comparison.html
+css/style.css
+js/leaflet.js
+js/openlayers.js
+kml/map.kml</code></pre>
+
+    </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LeafletJS kaart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">KML Maps</div>
+    <a href="index.html">Avaleht</a>
+    <a href="leaflet.html">LeafletJS</a>
+    <a href="openlayers.html">OpenLayers</a>
+    <a href="comparison.html">Võrdlus</a>
+</nav>
+
+<div class="container">
+
+    <h1>LeafletJS kaart</h1>
+
+    <p>
+        Siin kuvatakse <b>map.kml</b> fail LeafletJS kaardil.
+    </p>
+
+    <button class="btn" onclick="fitKml()">
+        Näita kogu KML-i
+    </button>
+
+    <button class="btn" onclick="findMe()">
+        Näita minu asukohta
+    </button>
+
+    <div id="map" class="map"></div>
+
+    <p id="status">
+        KML-i laadimine...
+    </p>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+
+<script src="js/leaflet.js"></script>
+
+</body>
+</html>
