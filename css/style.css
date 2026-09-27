@@ -105,3 +105,9 @@ pre {
     padding: 15px;
     overflow: auto;
 }
+#cesiumContainer { width: 100%; height: 600px; }
+/* 2D ja Columbus View põhjustavad clampToGround objektidega vea -> peidame need */
+.cesium-sceneModePicker-button2D,
+.cesium-sceneModePicker-buttonColumbusView {
+    display: none !important;
+}

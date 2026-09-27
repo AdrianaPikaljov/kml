@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="et">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cesium 3D kaart</title>
-
+    <title>CesiumJS 3D kaart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-          href="https://cesium.com/downloads/cesiumjs/releases/1.121/Build/Cesium/Widgets/widgets.css">
-</head>
 
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.121/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
 <body>
 
 <nav>
@@ -19,37 +15,22 @@
     <a href="index.html">Avaleht</a>
     <a href="leaflet.html">LeafletJS</a>
     <a href="openlayers.html">OpenLayers</a>
-    <a href="cesium.html">Cesium 3D</a>
+    <a href="cesium.html">CesiumJS (3D)</a>
     <a href="comparison.html">Võrdlus</a>
 </nav>
 
 <div class="container">
+    <h1>CesiumJS 3D kaart</h1>
 
-    <h1>Cesium 3D kaart</h1>
+    <p>Siin kuvatakse map.kml fail CesiumJS 3D gloobusel.</p>
 
-    <p>
-        Siin kuvatakse <b>map.kml</b> fail Cesium 3D gloobusel
-        koos maastiku reljeefi ja hoonetega.
-    </p>
+    <button class="btn" id="toggle-btn">Peida/näita KML</button>
+    <button class="btn" id="toggle-buildings-btn">Peida/näita 3D hooned</button>
 
-    <button class="btn" onclick="fitKml()">
-        Näita kogu KML-i
-    </button>
-
-    <button class="btn" onclick="findMe()">
-        Näita minu asukohta
-    </button>
-
-    <div id="cesiumContainer" class="map"></div>
-
-    <p id="status">
-        KML-i laadimine...
-    </p>
-
+    <div id="cesiumContainer"></div>
 </div>
 
 <script src="https://cesium.com/downloads/cesiumjs/releases/1.121/Build/Cesium/Cesium.js"></script>
-
 <script src="js/cesium.js"></script>
 
 </body>
